@@ -1,0 +1,24 @@
+.b-openBurger {
+    width: 451px;
+    padding: 33px 64.5px 57px;
+    background: #A6C9FF;
+    border: 1px solid #00FF4A;
+
+    &__buttonWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 55px;
+    }
+}
+
+@media(max-width: 667px) {
+    .b-openBurger {
+        width: 325px;
+        padding: 5px;
+
+        &__buttonWrapper {
+            margin-top: 10px;
+        }
+    }
+}

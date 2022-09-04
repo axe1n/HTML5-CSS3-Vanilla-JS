@@ -1,0 +1,16 @@
+.b-burger {
+    display: flex;
+    cursor: pointer;
+
+    &__icon {
+        display: block;
+    }
+}
+
+@media(max-width: 667px) {
+    .b-burger {
+        &__icon {
+            width: 25px;
+        }
+    }
+}

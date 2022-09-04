@@ -1,0 +1,26 @@
+.b-proportions {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: #D4FF5A;
+    border-radius: 30px;
+    padding: 25px;
+
+    &__item {
+        width: 198px;
+        background: #497957;
+        border: 2px solid #00FF4A;
+        border-radius: 35px;
+        padding-bottom: 18.131%;
+
+        &:hover {
+            box-shadow: 2px 5px 10px #497957;
+        }
+    }
+}
+
+@media(max-width: 667px) {
+    .b-proportions {
+        padding: 10px;
+    }
+}
