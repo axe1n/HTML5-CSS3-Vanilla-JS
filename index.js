@@ -23,9 +23,7 @@ navEls.forEach((el) => {
 const burgerEl = document.querySelector('.b-burger');
 const openBurgerEl = document.querySelector('.b-openBurger');
 
-burgerEl.addEventListener('click', () => {
-  openBurgerEl.classList.toggle('hidden');
-
+const burgerIconChange = () => {
   const isBurgerOpen = !openBurgerEl.classList.contains('hidden');
 
   if (isBurgerOpen) {
@@ -33,8 +31,22 @@ burgerEl.addEventListener('click', () => {
       './img/close-burger.svg');
   }
   burgerEl.querySelector('.b-burger__icon').src = './img/burger.svg';
+};
+
+burgerEl.addEventListener('click', () => {
+  openBurgerEl.classList.toggle('hidden');
+  burgerIconChange();
+});
+
+openBurgerEl.addEventListener('mouseleave', () => {
+  openBurgerEl.classList.toggle('hidden');
+  burgerIconChange();
 });
 
 // Слайдер
-const slider = new Slider('.b-slider');
-slider.init();
+// Реализация через функцию
+slider();
+
+// Реализация через класс
+// const slider = new Slider();
+// slider.init();

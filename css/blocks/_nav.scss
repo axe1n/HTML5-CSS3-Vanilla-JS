@@ -5,7 +5,7 @@
 
     &_vertical {
         display: grid;
-        gap: 39px;
+        gap: 40px;
         grid-template-columns: min-content;
     }
 
@@ -15,28 +15,11 @@
         line-height: 45px;
         color: #FFFFFF;
         cursor: pointer;
-        position: relative;
     }
 
     &__menuItem_accent {
-        font-weight: 700;
-        font-size: 28px;
-        line-height: 45px;
         text-decoration-line: underline;
     }
-
-    &__menuItemWidthFix {
-        font-weight: 700;
-        font-size: 28px;
-        line-height: 45px;
-        text-decoration-line: underline;
-        position: absolute;
-        top: 0;
-        left: 0;
-        visibility: hidden;
-        z-index: -1;
-    }
-
 }
 
 @media(max-width: 667px) {

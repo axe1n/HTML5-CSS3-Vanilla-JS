@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 49.04px 50.75px;
+    padding: 50px;
     background: #7029CB;
 
     &__prev,
@@ -14,12 +14,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        min-width: 452px;
-        margin-left: -100px;
-    }
-
-    &__btnWrapper {
-        margin-bottom: 12px;
+        min-width: 450px;
     }
 
     &__text {
@@ -28,8 +23,7 @@
         line-height: 45px;
         color: #FFFFFF;
         position: absolute;
-        top: 248px;
-        word-spacing: 10px;
+        top: 260px;
     }
 
     &__textWrapper {
@@ -45,7 +39,7 @@
 
 @media(max-width: 667px) {
     .b-slider {
-        padding: 10px;
+        padding: 10px 20px;
 
         &__prev,
         &__next {
@@ -57,7 +51,7 @@
         }
 
         &__textWrapper {
-            margin-right: 0;
+            margin-right: 77px;
         }
 
         &__text {
